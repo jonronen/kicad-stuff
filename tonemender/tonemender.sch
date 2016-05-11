@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:tonemender-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -45,7 +46,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L CONN_01X03 P1
+L CONN_01X03-RESCUE-tonemender P1
 U 1 1 56FD6CA1
 P 10250 2000
 F 0 "P1" H 10250 2200 50  0000 C CNN
@@ -209,7 +210,7 @@ L C C1
 U 1 1 56FD794D
 P 2400 3350
 F 0 "C1" V 2550 3300 50  0000 L CNN
-F 1 "22nF" V 2250 3300 50  0000 L CNN
+F 1 "470nF" V 2250 3300 50  0000 L CNN
 F 2 "Capacitors_ThroughHole:C_Rect_L4_W2.5_P2.5" H 2438 3200 50  0001 C CNN
 F 3 "" H 2400 3350 50  0000 C CNN
 	1    2400 3350
@@ -220,8 +221,8 @@ L TL072 U1
 U 1 1 56FD7980
 P 3000 3450
 F 0 "U1" H 2950 3650 50  0000 L CNN
-F 1 "TL072" H 2950 3200 50  0000 L CNN
-F 2 "Housings_DIP:DIP-8_W7.62mm" H 3000 3450 50  0001 C CNN
+F 1 "OPA1612" H 2950 3200 50  0000 L CNN
+F 2 "Power_Integrations:PDIP-8" H 3000 3450 50  0001 C CNN
 F 3 "" H 3000 3450 50  0000 C CNN
 	1    3000 3450
 	1    0    0    -1  
@@ -231,8 +232,8 @@ L TL072 U1
 U 2 1 56FD79CF
 P 6200 3850
 F 0 "U1" H 6150 4050 50  0000 L CNN
-F 1 "TL072" H 6150 3600 50  0000 L CNN
-F 2 "Housings_DIP:DIP-8_W7.62mm" H 6200 3850 50  0001 C CNN
+F 1 "OPA1612" H 6150 3600 50  0000 L CNN
+F 2 "Power_Integrations:PDIP-8" H 6200 3850 50  0001 C CNN
 F 3 "" H 6200 3850 50  0000 C CNN
 	2    6200 3850
 	1    0    0    -1  
@@ -313,7 +314,7 @@ U 1 1 56FD7F54
 P 3650 3750
 F 0 "R1" H 3750 3650 50  0000 C CNN
 F 1 "20K" H 3800 3850 50  0000 C CNN
-F 2 "Resistors_ThroughHole:Resistor_Vertical_RM5mm" V 3580 3750 50  0001 C CNN
+F 2 "Capacitors_ThroughHole:C_Rect_L4_W2.5_P2.5" V 3580 3750 50  0001 C CNN
 F 3 "" H 3650 3750 50  0000 C CNN
 	1    3650 3750
 	1    0    0    -1  
@@ -404,7 +405,7 @@ U 1 1 56FD86EF
 P 4900 5000
 F 0 "R2" H 5050 4950 50  0000 C CNN
 F 1 "10K" H 5050 5050 50  0000 C CNN
-F 2 "Resistors_ThroughHole:Resistor_Vertical_RM5mm" V 4830 5000 50  0001 C CNN
+F 2 "Capacitors_ThroughHole:C_Rect_L4_W2.5_P2.5" V 4830 5000 50  0001 C CNN
 F 3 "" H 4900 5000 50  0000 C CNN
 	1    4900 5000
 	1    0    0    -1  
@@ -445,7 +446,7 @@ U 1 1 56FD89BC
 P 5300 4050
 F 0 "R3" H 5400 4100 50  0000 C CNN
 F 1 "1M" H 5400 4000 50  0000 C CNN
-F 2 "Resistors_ThroughHole:Resistor_Vertical_RM5mm" V 5230 4050 50  0001 C CNN
+F 2 "Capacitors_ThroughHole:C_Rect_L4_W2.5_P2.5" V 5230 4050 50  0001 C CNN
 F 3 "" H 5300 4050 50  0000 C CNN
 	1    5300 4050
 	1    0    0    -1  
@@ -472,21 +473,10 @@ U 1 1 56FD910D
 P 5700 4250
 F 0 "R4" H 5800 4150 50  0000 C CNN
 F 1 "4.7K" H 5850 4300 50  0000 C CNN
-F 2 "Resistors_ThroughHole:Resistor_Vertical_RM5mm" V 5630 4250 50  0001 C CNN
+F 2 "Capacitors_ThroughHole:C_Rect_L4_W2.5_P2.5" V 5630 4250 50  0001 C CNN
 F 3 "" H 5700 4250 50  0000 C CNN
 	1    5700 4250
 	1    0    0    -1  
-$EndComp
-$Comp
-L C C5
-U 1 1 56FD917F
-P 5700 4700
-F 0 "C5" H 5725 4800 50  0000 L CNN
-F 1 "470nF" H 5725 4600 50  0000 L CNN
-F 2 "Capacitors_ThroughHole:C_Rect_L4_W2.5_P2.5" H 5738 4550 50  0001 C CNN
-F 3 "" H 5700 4700 50  0000 C CNN
-	1    5700 4700
-	-1   0    0    1   
 $EndComp
 $Comp
 L GND #PWR07
@@ -559,8 +549,8 @@ $Comp
 L C C6
 U 1 1 56FDA145
 P 6100 2600
-F 0 "C6" V 6050 2700 50  0000 L CNN
-F 1 "47pF" V 6050 2350 50  0000 L CNN
+F 0 "C6" V 6050 2450 50  0000 L CNN
+F 1 "47pF (optional)" V 6050 2700 50  0000 L CNN
 F 2 "Capacitors_ThroughHole:C_Rect_L4_W2.5_P2.5" H 6138 2450 50  0001 C CNN
 F 3 "" H 6100 2600 50  0000 C CNN
 	1    6100 2600
@@ -572,17 +562,6 @@ Connection ~ 5700 3000
 Wire Wire Line
 	6250 2600 6700 2600
 Connection ~ 6700 3000
-$Comp
-L C C7
-U 1 1 56FDA287
-P 7000 3850
-F 0 "C7" V 7150 3800 50  0000 L CNN
-F 1 "470nF" V 6850 3750 50  0000 L CNN
-F 2 "Capacitors_ThroughHole:C_Rect_L4_W2.5_P2.5" H 7038 3700 50  0001 C CNN
-F 3 "" H 7000 3850 50  0000 C CNN
-	1    7000 3850
-	0    1    1    0   
-$EndComp
 Connection ~ 6700 3850
 Wire Wire Line
 	7150 3850 7500 3850
@@ -617,7 +596,7 @@ U 1 1 56FDF432
 P 6000 3000
 F 0 "R5" V 6100 3000 50  0000 C CNN
 F 1 "620R" V 5900 3000 50  0000 C CNN
-F 2 "Resistors_ThroughHole:Resistor_Vertical_RM5mm" V 5930 3000 50  0001 C CNN
+F 2 "Capacitors_ThroughHole:C_Rect_L4_W2.5_P2.5" V 5930 3000 50  0001 C CNN
 F 3 "" H 6000 3000 50  0000 C CNN
 	1    6000 3000
 	0    1    1    0   
@@ -641,4 +620,28 @@ Connection ~ 8450 2000
 NoConn ~ 1850 3150
 NoConn ~ 7500 4150
 NoConn ~ 7500 3950
+$Comp
+L CP1 C7
+U 1 1 5733099A
+P 7000 3850
+F 0 "C7" V 7150 3800 50  0000 L CNN
+F 1 "1uF" V 6850 3800 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Radial_D5_L6_P2.5" H 7000 3850 50  0001 C CNN
+F 3 "" H 7000 3850 50  0000 C CNN
+	1    7000 3850
+	0    1    1    0   
+$EndComp
+Text Notes 1750 5350 0    60   ~ 0
+Substitute for U1: OP284
+$Comp
+L CP1 C5
+U 1 1 57334E1E
+P 5700 4700
+F 0 "C5" H 5850 4650 50  0000 L CNN
+F 1 "47uF" H 5850 4750 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Radial_D5_L6_P2.5" H 5700 4700 50  0001 C CNN
+F 3 "" H 5700 4700 50  0000 C CNN
+	1    5700 4700
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
