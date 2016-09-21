@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /projects/kicad-stuff/power_supply/plus_minus_12v.sch)
-    (date "Sat 17 Sep 2016 10:14:35 PM IDT")
+    (date "Wed 21 Sep 2016 06:29:33 AM IDT")
     (tool "Eeschema 4.0.4+e1-6308~48~ubuntu16.04.1-stable")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -161,7 +161,7 @@
       (tstamp 57D4D28C))
     (comp (ref T1)
       (value MYRRA-TRANSF)
-      (footprint Transformers_CHK:Trafo_CHK-EI42-5VA_1xSec)
+      (footprint "My Shit:Transformer-5VA_1xSec")
       (libsource (lib my_symbols) (part MYRRA-TRANSF))
       (sheetpath (names /) (tstamps /))
       (tstamp 57D5A65E))
@@ -301,14 +301,14 @@
         (pin (num 1) (name ~) (type passive))
         (pin (num 2) (name ~) (type passive)))))
   (libraries
+    (library (logical my_symbols)
+      (uri /projects/kicad-stuff/my_symbols.lib))
     (library (logical device)
       (uri /usr/share/kicad/library/device.lib))
     (library (logical conn)
       (uri /usr/share/kicad/library/conn.lib))
     (library (logical regul)
-      (uri /usr/share/kicad/library/regul.lib))
-    (library (logical my_symbols)
-      (uri /projects/kicad-stuff/my_symbols.lib)))
+      (uri /usr/share/kicad/library/regul.lib)))
   (nets
     (net (code 1) (name GND)
       (node (ref C3) (pin 2))
