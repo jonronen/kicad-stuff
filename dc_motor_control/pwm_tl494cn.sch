@@ -1,0 +1,771 @@
+EESchema Schematic File Version 2
+LIBS:pwm_tl494cn-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:my_symbols
+LIBS:pwm_tl494cn-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L TL494 U?
+U 1 1 5B981EA3
+P 3150 3600
+F 0 "U?" H 3150 3500 60  0000 C CNN
+F 1 "TL494" H 3150 3650 60  0000 C CNN
+F 2 "" H 4250 3375 60  0000 C CNN
+F 3 "" H 4250 3375 60  0000 C CNN
+	1    3150 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 4800 3150 4800
+$Comp
+L GND #PWR?
+U 1 1 5B982F74
+P 2300 4400
+F 0 "#PWR?" H 2300 4150 50  0001 C CNN
+F 1 "GND" H 2300 4250 50  0000 C CNN
+F 2 "" H 2300 4400 50  0000 C CNN
+F 3 "" H 2300 4400 50  0000 C CNN
+	1    2300 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 4350 2300 4350
+Wire Wire Line
+	2300 4350 2300 4400
+$Comp
+L R R?
+U 1 1 5B984C03
+P 2150 3250
+F 0 "R?" V 2100 3100 50  0000 C CNN
+F 1 "22K" V 2050 3250 50  0000 C CNN
+F 2 "Resistors_Universal:Resistor_SMD+THTuniversal_2512_RM10_HandSoldering" V 2080 3250 50  0001 C CNN
+F 3 "" H 2150 3250 50  0000 C CNN
+	1    2150 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L C C?
+U 1 1 5B984CAF
+P 1850 3400
+F 0 "C?" V 2000 3400 50  0000 L CNN
+F 1 "100nF" V 1900 3450 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Rect_L4_W2.5_P2.5" H 1888 3250 50  0001 C CNN
+F 3 "" H 1850 3400 50  0000 C CNN
+	1    1850 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5B984E24
+P 1550 3500
+F 0 "#PWR?" H 1550 3250 50  0001 C CNN
+F 1 "GND" H 1550 3350 50  0000 C CNN
+F 2 "" H 1550 3500 50  0000 C CNN
+F 3 "" H 1550 3500 50  0000 C CNN
+	1    1550 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 3400 1550 3400
+Wire Wire Line
+	1550 3250 1550 3500
+Wire Wire Line
+	2000 3250 1550 3250
+Connection ~ 1550 3400
+Wire Wire Line
+	2000 3400 2400 3400
+Wire Wire Line
+	2300 3250 2400 3250
+$Comp
+L +12V #PWR?
+U 1 1 5B9858DC
+P 3150 2350
+F 0 "#PWR?" H 3150 2200 50  0001 C CNN
+F 1 "+12V" H 3150 2490 50  0000 C CNN
+F 2 "" H 3150 2350 50  0001 C CNN
+F 3 "" H 3150 2350 50  0001 C CNN
+	1    3150 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 2350 3150 2450
+Wire Wire Line
+	3150 2450 3950 2450
+Wire Wire Line
+	3950 2450 3950 3600
+Wire Wire Line
+	3950 3600 3850 3600
+Wire Wire Line
+	3850 3150 3950 3150
+Connection ~ 3950 3150
+Wire Wire Line
+	3850 3300 4800 3300
+Wire Wire Line
+	4200 3300 4200 3800
+Wire Wire Line
+	3850 3800 4300 3800
+$Comp
+L R R?
+U 1 1 5B985F95
+P 4450 3800
+F 0 "R?" V 4550 3800 50  0000 C CNN
+F 1 "220R" V 4350 3800 50  0000 C CNN
+F 2 "Resistors_Universal:Resistor_SMD+THTuniversal_2512_RM10_HandSoldering" V 4380 3800 50  0001 C CNN
+F 3 "" H 4450 3800 50  0000 C CNN
+	1    4450 3800
+	0    -1   -1   0   
+$EndComp
+Connection ~ 4200 3800
+$Comp
+L GND #PWR?
+U 1 1 5B9860BB
+P 4750 3900
+F 0 "#PWR?" H 4750 3650 50  0001 C CNN
+F 1 "GND" H 4750 3750 50  0000 C CNN
+F 2 "" H 4750 3900 50  0000 C CNN
+F 3 "" H 4750 3900 50  0000 C CNN
+	1    4750 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 3800 4750 3800
+Wire Wire Line
+	4750 3800 4750 3900
+$Comp
+L BD139 Q?
+U 1 1 5B9862BD
+P 5000 3050
+F 0 "Q?" H 5200 3125 50  0000 L CNN
+F 1 "BD139" H 5200 3050 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-126_Vertical" H 5200 2975 50  0001 L CIN
+F 3 "" H 5000 3050 50  0001 L CNN
+	1    5000 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L BD140 Q?
+U 1 1 5B986334
+P 5000 3600
+F 0 "Q?" H 5200 3675 50  0000 L CNN
+F 1 "BD140" H 5200 3600 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-126_Vertical" H 5200 3525 50  0001 L CIN
+F 3 "" H 5000 3600 50  0001 L CNN
+	1    5000 3600
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	2400 3650 1750 3650
+Wire Wire Line
+	1750 3650 1750 4150
+Wire Wire Line
+	1750 4000 2400 4000
+$Comp
+L R R?
+U 1 1 5B98729E
+P 1750 4300
+F 0 "R?" H 1650 4300 50  0000 C CNN
+F 1 "4.7K" H 1900 4300 50  0000 C CNN
+F 2 "Resistors_Universal:Resistor_SMD+THTuniversal_2512_RM10_HandSoldering" V 1680 4300 50  0001 C CNN
+F 3 "" H 1750 4300 50  0000 C CNN
+	1    1750 4300
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5B98733F
+P 1750 4550
+F 0 "#PWR?" H 1750 4300 50  0001 C CNN
+F 1 "GND" H 1750 4400 50  0000 C CNN
+F 2 "" H 1750 4550 50  0000 C CNN
+F 3 "" H 1750 4550 50  0000 C CNN
+	1    1750 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 4550 1750 4450
+Connection ~ 1750 4000
+$Comp
+L POT RV?
+U 1 1 5B9876A9
+P 4300 5350
+F 0 "RV?" V 4125 5350 50  0000 C CNN
+F 1 "POT" V 4200 5350 50  0000 C CNN
+F 2 "" H 4300 5350 50  0001 C CNN
+F 3 "" H 4300 5350 50  0001 C CNN
+	1    4300 5350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2400 3800 2000 3800
+Wire Wire Line
+	2000 3800 2000 5150
+Wire Wire Line
+	2000 4150 2400 4150
+$Comp
+L GND #PWR?
+U 1 1 5B98292B
+P 3150 4800
+F 0 "#PWR?" H 3150 4550 50  0001 C CNN
+F 1 "GND" H 3150 4650 50  0000 C CNN
+F 2 "" H 3150 4800 50  0000 C CNN
+F 3 "" H 3150 4800 50  0000 C CNN
+	1    3150 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5B988F92
+P 2700 5150
+F 0 "R?" V 2800 5150 50  0000 C CNN
+F 1 "4.7K" V 2600 5150 50  0000 C CNN
+F 2 "Resistors_Universal:Resistor_SMD+THTuniversal_2512_RM10_HandSoldering" V 2630 5150 50  0001 C CNN
+F 3 "" H 2700 5150 50  0000 C CNN
+	1    2700 5150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2850 5150 4300 5150
+Wire Wire Line
+	2000 5150 2550 5150
+Connection ~ 2000 4150
+Wire Wire Line
+	4300 4150 4300 5200
+$Comp
+L C C?
+U 1 1 5B98916C
+P 3900 4700
+F 0 "C?" H 3750 4600 50  0000 L CNN
+F 1 "100nF" H 3950 4750 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Rect_L4_W2.5_P2.5" H 3938 4550 50  0001 C CNN
+F 3 "" H 3900 4700 50  0000 C CNN
+	1    3900 4700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3850 4150 4300 4150
+Connection ~ 4300 5150
+Wire Wire Line
+	3900 4150 3900 4550
+Connection ~ 3900 4150
+Wire Wire Line
+	3900 4850 3900 5350
+Wire Wire Line
+	1350 5350 4150 5350
+Wire Wire Line
+	1350 5350 1350 2900
+Wire Wire Line
+	1350 2900 2400 2900
+Connection ~ 3900 5350
+$Comp
+L GND #PWR?
+U 1 1 5B9894C0
+P 4300 5650
+F 0 "#PWR?" H 4300 5400 50  0001 C CNN
+F 1 "GND" H 4300 5500 50  0000 C CNN
+F 2 "" H 4300 5650 50  0000 C CNN
+F 3 "" H 4300 5650 50  0000 C CNN
+	1    4300 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 5650 4300 5500
+$Comp
+L GND #PWR?
+U 1 1 5B9896F8
+P 5100 3900
+F 0 "#PWR?" H 5100 3650 50  0001 C CNN
+F 1 "GND" H 5100 3750 50  0000 C CNN
+F 2 "" H 5100 3900 50  0000 C CNN
+F 3 "" H 5100 3900 50  0000 C CNN
+	1    5100 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 3900 5100 3800
+Wire Wire Line
+	5100 3250 5100 3400
+Connection ~ 4200 3300
+Wire Wire Line
+	4800 3050 4800 3600
+Connection ~ 4800 3300
+$Comp
+L +12V #PWR?
+U 1 1 5B989925
+P 5100 2700
+F 0 "#PWR?" H 5100 2550 50  0001 C CNN
+F 1 "+12V" H 5100 2840 50  0000 C CNN
+F 2 "" H 5100 2700 50  0001 C CNN
+F 3 "" H 5100 2700 50  0001 C CNN
+	1    5100 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 2700 5100 2850
+$Comp
+L L7812 U?
+U 1 1 5B989B09
+P 5650 1550
+F 0 "U?" H 5500 1675 50  0000 C CNN
+F 1 "L7812" H 5650 1675 50  0000 L CNN
+F 2 "" H 5675 1400 50  0001 L CIN
+F 3 "" H 5650 1500 50  0001 C CNN
+	1    5650 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR?
+U 1 1 5B989B7B
+P 4350 1450
+F 0 "#PWR?" H 4350 1300 50  0001 C CNN
+F 1 "+12V" H 4350 1590 50  0000 C CNN
+F 2 "" H 4350 1450 50  0001 C CNN
+F 3 "" H 4350 1450 50  0001 C CNN
+	1    4350 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5B989BE9
+P 5650 2150
+F 0 "#PWR?" H 5650 1900 50  0001 C CNN
+F 1 "GND" H 5650 2000 50  0000 C CNN
+F 2 "" H 5650 2150 50  0000 C CNN
+F 3 "" H 5650 2150 50  0000 C CNN
+	1    5650 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 1850 5650 2150
+$Comp
+L R R?
+U 1 1 5B989CCC
+P 5050 1550
+F 0 "R?" V 5150 1550 50  0000 C CNN
+F 1 "10R" V 4950 1550 50  0000 C CNN
+F 2 "Resistors_Universal:Resistor_SMD+THTuniversal_2512_RM10_HandSoldering" V 4980 1550 50  0001 C CNN
+F 3 "" H 5050 1550 50  0000 C CNN
+	1    5050 1550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4350 1550 4900 1550
+Wire Wire Line
+	5200 1550 5350 1550
+Wire Wire Line
+	4350 1450 4350 1650
+$Comp
+L C C?
+U 1 1 5B989E83
+P 4700 1800
+F 0 "C?" H 4750 1700 50  0000 L CNN
+F 1 "100nF" H 4750 1850 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Rect_L4_W2.5_P2.5" H 4738 1650 50  0001 C CNN
+F 3 "" H 4700 1800 50  0000 C CNN
+	1    4700 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C?
+U 1 1 5B989F93
+P 4350 1800
+F 0 "C?" H 4250 1700 50  0000 L CNN
+F 1 "100uF" H 4000 1900 50  0000 L CNN
+F 2 "" H 4388 1650 50  0001 C CNN
+F 3 "" H 4350 1800 50  0001 C CNN
+	1    4350 1800
+	1    0    0    -1  
+$EndComp
+Connection ~ 4350 1550
+Wire Wire Line
+	4700 1550 4700 1650
+Connection ~ 4700 1550
+Wire Wire Line
+	4700 1950 4700 2050
+Wire Wire Line
+	4350 2050 5650 2050
+Connection ~ 5650 2050
+Wire Wire Line
+	4350 2050 4350 1950
+Connection ~ 4700 2050
+$Comp
+L IRF540N Q?
+U 1 1 5B98A5C0
+P 7000 3350
+F 0 "Q?" H 7250 3425 50  0000 L CNN
+F 1 "RFP70N06" H 7200 3350 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-220_Vertical" H 7250 3275 50  0001 L CIN
+F 3 "" H 7000 3350 50  0001 L CNN
+	1    7000 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L D D?
+U 1 1 5B98A851
+P 5750 3150
+F 0 "D?" H 5750 3250 50  0000 C CNN
+F 1 "MUR120" H 6000 3250 50  0000 C CNN
+F 2 "" H 5750 3150 50  0001 C CNN
+F 3 "" H 5750 3150 50  0001 C CNN
+	1    5750 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5B98A926
+P 5750 3350
+F 0 "R?" V 5650 3500 50  0000 C CNN
+F 1 "47R" V 5650 3250 50  0000 C CNN
+F 2 "Resistors_Universal:Resistor_SMD+THTuniversal_2512_RM10_HandSoldering" V 5680 3350 50  0001 C CNN
+F 3 "" H 5750 3350 50  0000 C CNN
+	1    5750 3350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5100 3350 5600 3350
+Connection ~ 5100 3350
+Wire Wire Line
+	5600 3150 5450 3150
+Wire Wire Line
+	5450 3150 5450 3350
+Connection ~ 5450 3350
+Wire Wire Line
+	5900 3350 6450 3350
+Wire Wire Line
+	5900 3150 6050 3150
+Wire Wire Line
+	6050 3150 6050 3350
+Connection ~ 6050 3350
+$Comp
+L R R?
+U 1 1 5B98AD74
+P 6800 3050
+F 0 "R?" H 6900 3050 50  0000 C CNN
+F 1 "10R" H 6650 3050 50  0000 C CNN
+F 2 "Resistors_Universal:Resistor_SMD+THTuniversal_2512_RM10_HandSoldering" V 6730 3050 50  0001 C CNN
+F 3 "" H 6800 3050 50  0000 C CNN
+	1    6800 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 3200 6800 3500
+Wire Wire Line
+	6450 3350 6450 2750
+Wire Wire Line
+	6450 2750 8800 2750
+Wire Wire Line
+	6800 2750 6800 2900
+$Comp
+L D_Zener D?
+U 1 1 5B98AFB4
+P 6800 3650
+F 0 "D?" V 6800 3750 50  0000 C CNN
+F 1 "15V" V 6800 3500 50  0000 C CNN
+F 2 "" H 6800 3650 50  0001 C CNN
+F 3 "" H 6800 3650 50  0001 C CNN
+	1    6800 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5B98B066
+P 6800 3900
+F 0 "#PWR?" H 6800 3650 50  0001 C CNN
+F 1 "GND" H 6800 3750 50  0000 C CNN
+F 2 "" H 6800 3900 50  0000 C CNN
+F 3 "" H 6800 3900 50  0000 C CNN
+	1    6800 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 3800 6800 3900
+Connection ~ 6800 3350
+Wire Wire Line
+	6800 3850 7100 3850
+Wire Wire Line
+	7100 3850 7100 3550
+Connection ~ 6800 3850
+$Comp
+L IRF540N Q?
+U 1 1 5B98B50B
+P 8000 3350
+F 0 "Q?" H 8250 3425 50  0000 L CNN
+F 1 "RFP70N06" H 8200 3350 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-220_Vertical" H 8250 3275 50  0001 L CIN
+F 3 "" H 8000 3350 50  0001 L CNN
+	1    8000 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L IRF540N Q?
+U 1 1 5B98B585
+P 9000 3350
+F 0 "Q?" H 9250 3425 50  0000 L CNN
+F 1 "RFP70N06" H 9200 3350 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-220_Vertical" H 9250 3275 50  0001 L CIN
+F 3 "" H 9000 3350 50  0001 L CNN
+	1    9000 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5B98B62A
+P 7800 3050
+F 0 "R?" H 7900 3050 50  0000 C CNN
+F 1 "10R" H 7650 3050 50  0000 C CNN
+F 2 "Resistors_Universal:Resistor_SMD+THTuniversal_2512_RM10_HandSoldering" V 7730 3050 50  0001 C CNN
+F 3 "" H 7800 3050 50  0000 C CNN
+	1    7800 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L D_Zener D?
+U 1 1 5B98B730
+P 7800 3650
+F 0 "D?" V 7800 3750 50  0000 C CNN
+F 1 "15V" V 7800 3500 50  0000 C CNN
+F 2 "" H 7800 3650 50  0001 C CNN
+F 3 "" H 7800 3650 50  0001 C CNN
+	1    7800 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5B98B7AB
+P 7800 3900
+F 0 "#PWR?" H 7800 3650 50  0001 C CNN
+F 1 "GND" H 7800 3750 50  0000 C CNN
+F 2 "" H 7800 3900 50  0000 C CNN
+F 3 "" H 7800 3900 50  0000 C CNN
+	1    7800 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 3800 7800 3900
+Wire Wire Line
+	8100 3550 8100 3850
+Wire Wire Line
+	8100 3850 7800 3850
+Connection ~ 7800 3850
+Wire Wire Line
+	7800 3200 7800 3500
+Wire Wire Line
+	7800 3350 7800 3350
+Connection ~ 7800 3350
+Wire Wire Line
+	7800 2750 7800 2900
+Connection ~ 6800 2750
+$Comp
+L R R?
+U 1 1 5B98BB88
+P 8800 3050
+F 0 "R?" H 8900 3050 50  0000 C CNN
+F 1 "10R" H 8650 3050 50  0000 C CNN
+F 2 "Resistors_Universal:Resistor_SMD+THTuniversal_2512_RM10_HandSoldering" V 8730 3050 50  0001 C CNN
+F 3 "" H 8800 3050 50  0000 C CNN
+	1    8800 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L D_Zener D?
+U 1 1 5B98BC04
+P 8800 3650
+F 0 "D?" V 8800 3750 50  0000 C CNN
+F 1 "15V" V 8800 3500 50  0000 C CNN
+F 2 "" H 8800 3650 50  0001 C CNN
+F 3 "" H 8800 3650 50  0001 C CNN
+	1    8800 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5B98BC87
+P 8800 3900
+F 0 "#PWR?" H 8800 3650 50  0001 C CNN
+F 1 "GND" H 8800 3750 50  0000 C CNN
+F 2 "" H 8800 3900 50  0000 C CNN
+F 3 "" H 8800 3900 50  0000 C CNN
+	1    8800 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 3800 8800 3900
+Wire Wire Line
+	9100 3550 9100 3850
+Wire Wire Line
+	9100 3850 8800 3850
+Connection ~ 8800 3850
+Wire Wire Line
+	8800 3200 8800 3500
+Connection ~ 8800 3350
+Wire Wire Line
+	8800 2750 8800 2900
+Connection ~ 7800 2750
+$Comp
+L R R?
+U 1 1 5B98C59A
+P 6300 3650
+F 0 "R?" H 6400 3650 50  0000 C CNN
+F 1 "10K" H 6150 3650 50  0000 C CNN
+F 2 "Resistors_Universal:Resistor_SMD+THTuniversal_2512_RM10_HandSoldering" V 6230 3650 50  0001 C CNN
+F 3 "" H 6300 3650 50  0000 C CNN
+	1    6300 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5B98C7D1
+P 6300 3900
+F 0 "#PWR?" H 6300 3650 50  0001 C CNN
+F 1 "GND" H 6300 3750 50  0000 C CNN
+F 2 "" H 6300 3900 50  0000 C CNN
+F 3 "" H 6300 3900 50  0000 C CNN
+	1    6300 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 3900 6300 3800
+Wire Wire Line
+	6300 3500 6300 3350
+Connection ~ 6300 3350
+$Comp
+L Conn_01x02 J?
+U 1 1 5B98CCD7
+P 9350 1550
+F 0 "J?" H 9350 1650 50  0000 C CNN
+F 1 "PWR" H 9350 1350 50  0000 C CNN
+F 2 "" H 9350 1550 50  0001 C CNN
+F 3 "" H 9350 1550 50  0001 C CNN
+	1    9350 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5B98CD3F
+P 9000 1800
+F 0 "#PWR?" H 9000 1550 50  0001 C CNN
+F 1 "GND" H 9000 1650 50  0000 C CNN
+F 2 "" H 9000 1800 50  0000 C CNN
+F 3 "" H 9000 1800 50  0000 C CNN
+	1    9000 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9000 1800 9000 1650
+Wire Wire Line
+	9000 1650 9150 1650
+$Comp
+L Fuse F?
+U 1 1 5B98CE03
+P 8650 1550
+F 0 "F?" V 8730 1550 50  0000 C CNN
+F 1 "Fuse" V 8575 1550 50  0000 C CNN
+F 2 "" V 8580 1550 50  0001 C CNN
+F 3 "" H 8650 1550 50  0001 C CNN
+	1    8650 1550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9150 1550 8800 1550
+Wire Wire Line
+	5950 1550 8500 1550
+$Comp
+L D D?
+U 1 1 5B98CFAE
+P 8100 1900
+F 0 "D?" V 8100 2000 50  0000 C CNN
+F 1 "MUR1560" V 7950 2100 50  0000 C CNN
+F 2 "" H 8100 1900 50  0001 C CNN
+F 3 "" H 8100 1900 50  0001 C CNN
+	1    8100 1900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8100 1750 8100 1550
+Connection ~ 8100 1550
+$Comp
+L D D?
+U 1 1 5B98D1F4
+P 7800 1900
+F 0 "D?" V 7800 2000 50  0000 C CNN
+F 1 "MUR1560" V 7650 1700 50  0000 C CNN
+F 2 "" H 7800 1900 50  0001 C CNN
+F 3 "" H 7800 1900 50  0001 C CNN
+	1    7800 1900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7800 1750 7800 1550
+Connection ~ 7800 1550
+$Comp
+L Conn_01x02 J?
+U 1 1 5B98D3A0
+P 7050 2150
+F 0 "J?" H 7050 2250 50  0000 C CNN
+F 1 "MOT" H 7050 1950 50  0000 C CNN
+F 2 "" H 7050 2150 50  0001 C CNN
+F 3 "" H 7050 2150 50  0001 C CNN
+	1    7050 2150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7100 3150 7100 2500
+Wire Wire Line
+	7100 2500 9100 2500
+Wire Wire Line
+	8100 2050 8100 3150
+Wire Wire Line
+	9100 2500 9100 3150
+Connection ~ 8100 2500
+Wire Wire Line
+	7250 2150 8100 2150
+Wire Wire Line
+	7800 2050 7800 2150
+Connection ~ 7800 2150
+Connection ~ 8100 2150
+Wire Wire Line
+	7250 2050 7350 2050
+Wire Wire Line
+	7350 2050 7350 1550
+Connection ~ 7350 1550
+$EndSCHEMATC
