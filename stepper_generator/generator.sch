@@ -1,0 +1,458 @@
+EESchema Schematic File Version 4
+LIBS:generator-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L pspice:DIODE D9
+U 1 1 5BEF3894
+P 9600 4500
+F 0 "D9" V 9646 4372 50  0000 R CNN
+F 1 "DIODE" V 9555 4372 50  0000 R CNN
+F 2 "Diode_THT:D_DO-15_P3.81mm_Vertical_KathodeUp" H 9600 4500 50  0001 C CNN
+F 3 "~" H 9600 4500 50  0001 C CNN
+	1    9600 4500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L pspice:DIODE D8
+U 1 1 5BEF39C9
+P 9600 3400
+F 0 "D8" V 9646 3272 50  0000 R CNN
+F 1 "DIODE" V 9555 3272 50  0000 R CNN
+F 2 "Diode_THT:D_DO-15_P3.81mm_Vertical_AnodeUp" H 9600 3400 50  0001 C CNN
+F 3 "~" H 9600 3400 50  0001 C CNN
+	1    9600 3400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L pspice:DIODE D7
+U 1 1 5BEF3B56
+P 9150 4500
+F 0 "D7" V 9196 4372 50  0000 R CNN
+F 1 "DIODE" V 9105 4372 50  0000 R CNN
+F 2 "Diode_THT:D_DO-15_P3.81mm_Vertical_KathodeUp" H 9150 4500 50  0001 C CNN
+F 3 "~" H 9150 4500 50  0001 C CNN
+	1    9150 4500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L pspice:DIODE D5
+U 1 1 5BEF3B7C
+P 8700 4500
+F 0 "D5" V 8746 4372 50  0000 R CNN
+F 1 "DIODE" V 8655 4372 50  0000 R CNN
+F 2 "Diode_THT:D_DO-15_P3.81mm_Vertical_KathodeUp" H 8700 4500 50  0001 C CNN
+F 3 "~" H 8700 4500 50  0001 C CNN
+	1    8700 4500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L pspice:DIODE D3
+U 1 1 5BEF3BAC
+P 8200 4500
+F 0 "D3" V 8246 4372 50  0000 R CNN
+F 1 "DIODE" V 8155 4372 50  0000 R CNN
+F 2 "Diode_THT:D_DO-15_P3.81mm_Vertical_KathodeUp" H 8200 4500 50  0001 C CNN
+F 3 "~" H 8200 4500 50  0001 C CNN
+	1    8200 4500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L pspice:DIODE D6
+U 1 1 5BEF3C30
+P 9150 3400
+F 0 "D6" V 9196 3272 50  0000 R CNN
+F 1 "DIODE" V 9105 3272 50  0000 R CNN
+F 2 "Diode_THT:D_DO-15_P3.81mm_Vertical_AnodeUp" H 9150 3400 50  0001 C CNN
+F 3 "~" H 9150 3400 50  0001 C CNN
+	1    9150 3400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L pspice:DIODE D4
+U 1 1 5BEF3C72
+P 8700 3400
+F 0 "D4" V 8746 3272 50  0000 R CNN
+F 1 "DIODE" V 8655 3272 50  0000 R CNN
+F 2 "Diode_THT:D_DO-15_P3.81mm_Vertical_AnodeUp" H 8700 3400 50  0001 C CNN
+F 3 "~" H 8700 3400 50  0001 C CNN
+	1    8700 3400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L pspice:DIODE D2
+U 1 1 5BEF3CA4
+P 8200 3400
+F 0 "D2" V 8246 3272 50  0000 R CNN
+F 1 "DIODE" V 8155 3272 50  0000 R CNN
+F 2 "Diode_THT:D_DO-15_P3.81mm_Vertical_AnodeUp" H 8200 3400 50  0001 C CNN
+F 3 "~" H 8200 3400 50  0001 C CNN
+	1    8200 3400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9900 3800 9600 3800
+Wire Wire Line
+	9600 3800 9600 3600
+Wire Wire Line
+	9600 3800 9600 4300
+Connection ~ 9600 3800
+Wire Wire Line
+	9900 3900 9150 3900
+Wire Wire Line
+	9150 3900 9150 4300
+Wire Wire Line
+	9900 4000 8700 4000
+Wire Wire Line
+	8700 4000 8700 4300
+Wire Wire Line
+	9900 4100 8200 4100
+Wire Wire Line
+	8200 4100 8200 4300
+Wire Wire Line
+	8200 4100 8200 3600
+Connection ~ 8200 4100
+Wire Wire Line
+	8700 4000 8700 3600
+Connection ~ 8700 4000
+Wire Wire Line
+	9150 3600 9150 3900
+Connection ~ 9150 3900
+Wire Wire Line
+	9600 3200 9600 2950
+Wire Wire Line
+	8200 2950 8200 3200
+Wire Wire Line
+	8700 2950 8700 3200
+Connection ~ 8700 2950
+Wire Wire Line
+	8700 2950 8200 2950
+Wire Wire Line
+	9150 3200 9150 2950
+Wire Wire Line
+	8700 2950 9150 2950
+Connection ~ 9150 2950
+Wire Wire Line
+	9150 2950 9600 2950
+Wire Wire Line
+	9600 4700 9600 5000
+Wire Wire Line
+	9600 5000 9150 5000
+Wire Wire Line
+	9150 5000 9150 4700
+Wire Wire Line
+	9150 5000 8700 5000
+Wire Wire Line
+	8700 5000 8700 4700
+Connection ~ 9150 5000
+Wire Wire Line
+	8700 5000 8200 5000
+Wire Wire Line
+	8200 5000 8200 4700
+Connection ~ 8700 5000
+$Comp
+L Device:C C3
+U 1 1 5BEF4EE2
+P 7100 4000
+F 0 "C3" H 7215 4046 50  0000 L CNN
+F 1 "100nF" H 7200 3900 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 7138 3850 50  0001 C CNN
+F 3 "~" H 7100 4000 50  0001 C CNN
+	1    7100 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C4
+U 1 1 5BEF4FBE
+P 7500 4000
+F 0 "C4" H 7618 4046 50  0000 L CNN
+F 1 "470uF" H 7618 3955 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 7538 3850 50  0001 C CNN
+F 3 "~" H 7500 4000 50  0001 C CNN
+	1    7500 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C2
+U 1 1 5BEF502E
+P 5150 4000
+F 0 "C2" H 5268 4046 50  0000 L CNN
+F 1 "1uF" H 5268 3955 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 5188 3850 50  0001 C CNN
+F 3 "~" H 5150 4000 50  0001 C CNN
+	1    5150 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8200 2950 7500 2950
+Wire Wire Line
+	7500 2950 7500 3850
+Connection ~ 8200 2950
+Wire Wire Line
+	7500 4150 7500 5000
+Wire Wire Line
+	7500 5000 8200 5000
+Connection ~ 8200 5000
+Wire Wire Line
+	7100 4150 7100 5000
+Wire Wire Line
+	7100 5000 7500 5000
+Connection ~ 7500 5000
+Wire Wire Line
+	7500 2950 7100 2950
+Wire Wire Line
+	7100 2950 7100 3850
+Connection ~ 7500 2950
+$Comp
+L Regulator_Linear:LM317_3PinPackage U2
+U 1 1 5BEF63E5
+P 6200 2950
+F 0 "U2" H 6200 3192 50  0000 C CNN
+F 1 "LM317_3PinPackage" H 6200 3101 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 6200 3200 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lm317.pdf" H 6200 2950 50  0001 C CNN
+	1    6200 2950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 2950 7100 2950
+Connection ~ 7100 2950
+Wire Wire Line
+	5150 2950 5150 3850
+Wire Wire Line
+	5150 4150 5150 5000
+Connection ~ 7100 5000
+$Comp
+L Device:R R2
+U 1 1 5BF01A29
+P 5650 3500
+F 0 "R2" H 5720 3546 50  0000 L CNN
+F 1 "330R" H 5720 3455 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" V 5580 3500 50  0001 C CNN
+F 3 "~" H 5650 3500 50  0001 C CNN
+	1    5650 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 3650 5650 3850
+Wire Wire Line
+	5650 3850 6200 3850
+Wire Wire Line
+	6200 3850 6200 3250
+$Comp
+L Device:R R3
+U 1 1 5BF04A4B
+P 5650 4300
+F 0 "R3" H 5720 4346 50  0000 L CNN
+F 1 "1K" H 5720 4255 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" V 5580 4300 50  0001 C CNN
+F 3 "~" H 5650 4300 50  0001 C CNN
+	1    5650 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 2950 5650 3350
+Connection ~ 5650 3850
+Wire Wire Line
+	5150 2950 5650 2950
+Connection ~ 5650 2950
+Wire Wire Line
+	5650 2950 5900 2950
+Wire Wire Line
+	5650 4150 5650 3850
+$Comp
+L Connector:Conn_01x02_Male J4
+U 1 1 5BF0D6D8
+P 6000 4600
+F 0 "J4" H 6106 4778 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 6100 4400 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 6000 4600 50  0001 C CNN
+F 3 "~" H 6000 4600 50  0001 C CNN
+	1    6000 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5BF0D728
+P 6200 4300
+F 0 "R4" H 6270 4346 50  0000 L CNN
+F 1 "1.2K" H 6270 4255 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" V 6130 4300 50  0001 C CNN
+F 3 "~" H 6200 4300 50  0001 C CNN
+	1    6200 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 4700 6200 5000
+Connection ~ 6200 5000
+Wire Wire Line
+	6200 5000 7100 5000
+Wire Wire Line
+	6200 4150 6200 3850
+Connection ~ 6200 3850
+$Comp
+L Connector:Conn_01x04_Male J5
+U 1 1 5BF10454
+P 10100 4000
+F 0 "J5" H 10073 3880 50  0000 R CNN
+F 1 "Conn_01x04_Male" H 10073 3971 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 10100 4000 50  0001 C CNN
+F 3 "~" H 10100 4000 50  0001 C CNN
+	1    10100 4000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5BF1051B
+P 4600 3500
+F 0 "R1" H 4670 3546 50  0000 L CNN
+F 1 "1K" H 4670 3455 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" V 4530 3500 50  0001 C CNN
+F 3 "~" H 4600 3500 50  0001 C CNN
+	1    4600 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5BF10654
+P 4600 4350
+F 0 "D1" V 4638 4233 50  0000 R CNN
+F 1 "LED" V 4547 4233 50  0000 R CNN
+F 2 "LED_THT:LED_D4.0mm" H 4600 4350 50  0001 C CNN
+F 3 "~" H 4600 4350 50  0001 C CNN
+	1    4600 4350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5150 2950 4600 2950
+Wire Wire Line
+	4600 2950 4600 3350
+Connection ~ 5150 2950
+Wire Wire Line
+	4600 3650 4600 4200
+Wire Wire Line
+	4600 4500 4600 5000
+Wire Wire Line
+	4600 5000 5150 5000
+Connection ~ 5150 5000
+$Comp
+L Connector:Screw_Terminal_01x02 J2
+U 1 1 5BF1395D
+P 3800 3950
+F 0 "J2" H 3720 3625 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 3550 3700 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 3800 3950 50  0001 C CNN
+F 3 "~" H 3800 3950 50  0001 C CNN
+	1    3800 3950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4600 2950 4000 2950
+Wire Wire Line
+	4000 2950 4000 3850
+Connection ~ 4600 2950
+Wire Wire Line
+	4000 3950 4000 5000
+Wire Wire Line
+	4000 5000 4600 5000
+Connection ~ 4600 5000
+$Comp
+L Interface_USB:TPS2514 U1
+U 1 1 5BFA33CA
+P 2600 4000
+F 0 "U1" H 2600 4425 50  0000 C CNN
+F 1 "TPS2514" H 2600 4334 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 2600 3600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tps2513.pdf" H 2600 4050 50  0001 C CNN
+	1    2600 4000
+	-1   0    0    -1  
+$EndComp
+Connection ~ 4000 2950
+Wire Wire Line
+	2900 4200 2900 5000
+Wire Wire Line
+	2900 5000 3300 5000
+Connection ~ 4000 5000
+$Comp
+L Device:C C1
+U 1 1 5BFA9BEA
+P 3300 3900
+F 0 "C1" H 3415 3946 50  0000 L CNN
+F 1 "100nF" H 3415 3855 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 3338 3750 50  0001 C CNN
+F 3 "~" H 3300 3900 50  0001 C CNN
+	1    3300 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 2950 4000 2950
+Wire Wire Line
+	3300 4050 3300 5000
+Connection ~ 3300 5000
+Wire Wire Line
+	3300 5000 4000 5000
+$Comp
+L Connector:USB_A J1
+U 1 1 5BFB4995
+P 1600 3150
+F 0 "J1" H 1655 3617 50  0000 C CNN
+F 1 "USB_A" H 1655 3526 50  0000 C CNN
+F 2 "my_shit:USB_A_Female" H 1750 3100 50  0001 C CNN
+F 3 " ~" H 1750 3100 50  0001 C CNN
+	1    1600 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 2950 3300 3750
+Wire Wire Line
+	2900 3800 2900 2950
+Wire Wire Line
+	2900 2950 3300 2950
+Connection ~ 3300 2950
+Wire Wire Line
+	1900 2950 2900 2950
+Connection ~ 2900 2950
+Wire Wire Line
+	1600 3550 1600 5000
+Wire Wire Line
+	1600 5000 2900 5000
+Connection ~ 2900 5000
+Wire Wire Line
+	1500 3550 1500 5000
+Wire Wire Line
+	1500 5000 1600 5000
+Connection ~ 1600 5000
+Wire Wire Line
+	2300 3800 2200 3800
+Wire Wire Line
+	2200 3800 2200 3250
+Wire Wire Line
+	2200 3250 1900 3250
+Wire Wire Line
+	1900 3150 2050 3150
+Wire Wire Line
+	2050 3150 2050 3900
+Wire Wire Line
+	2050 3900 2300 3900
+Wire Wire Line
+	5650 4450 5650 5000
+Wire Wire Line
+	6200 4450 6200 4600
+Wire Wire Line
+	5150 5000 5650 5000
+Connection ~ 5650 5000
+Wire Wire Line
+	5650 5000 6200 5000
+$EndSCHEMATC
