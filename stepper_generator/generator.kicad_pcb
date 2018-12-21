@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 9)
+    (drawings 10)
     (tracks 87)
     (zones 0)
     (modules 26)
@@ -1336,6 +1336,9 @@
     )
   )
 
+  (gr_text "github:\njonronen" (at 87.63 66.04) (layer B.SilkS) (tstamp 5C1D551B)
+    (effects (font (size 1.5 1.5) (thickness 0.3)) (justify mirror))
+  )
   (gr_text 0 (at 85.09 70.485) (layer F.SilkS)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
