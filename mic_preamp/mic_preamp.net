@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /projects/kicad-stuff/mic_preamp/mic_preamp.sch)
-    (date "Fri Oct 11 14:46:01 2019")
+    (date "Fri Nov 22 12:32:53 2019")
     (tool "Eeschema 5.0.2-bee76a0~70~ubuntu18.04.1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -203,13 +203,6 @@
       (libsource (lib Mechanical) (part MountingHole) (description "Mounting Hole without connection"))
       (sheetpath (names /) (tstamps /))
       (tstamp 5DA75438))
-    (comp (ref H3)
-      (value MountingHole)
-      (footprint MountingHole:MountingHole_3.2mm_M3)
-      (datasheet ~)
-      (libsource (lib Mechanical) (part MountingHole) (description "Mounting Hole without connection"))
-      (sheetpath (names /) (tstamps /))
-      (tstamp 5DA754AC))
     (comp (ref H1)
       (value MountingHole)
       (footprint MountingHole:MountingHole_3.2mm_M3)

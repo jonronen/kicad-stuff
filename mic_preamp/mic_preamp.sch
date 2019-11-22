@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:mic_preamp-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -40,7 +41,7 @@ L Device:R_POT_US RV1
 U 1 1 5DA03F58
 P 5050 3150
 F 0 "RV1" V 5000 3300 50  0000 C CNN
-F 1 "2.2K" V 5200 3300 50  0000 C CNN
+F 1 "1K" V 5200 3300 50  0000 C CNN
 F 2 "Potentiometer_THT:Potentiometer_Alps_RK163_Single_Horizontal" H 5050 3150 50  0001 C CNN
 F 3 "~" H 5050 3150 50  0001 C CNN
 	1    5050 3150
@@ -639,17 +640,6 @@ F 3 "~" H 3500 1350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H3
-U 1 1 5DA754AC
-P 4350 1350
-F 0 "H3" H 4450 1396 50  0000 L CNN
-F 1 "MountingHole" H 4450 1305 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 4350 1350 50  0001 C CNN
-F 3 "~" H 4350 1350 50  0001 C CNN
-	1    4350 1350
-	1    0    0    -1  
-$EndComp
-$Comp
 L Mechanical:MountingHole H1
 U 1 1 5DA75528
 P 2700 1350
@@ -661,10 +651,10 @@ F 3 "~" H 2700 1350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:Earth #PWR?
+L power:Earth #PWR0101
 U 1 1 5DA75F29
 P 5100 2150
-F 0 "#PWR?" H 5100 1900 50  0001 C CNN
+F 0 "#PWR0101" H 5100 1900 50  0001 C CNN
 F 1 "Earth" H 5100 2000 50  0001 C CNN
 F 2 "" H 5100 2150 50  0001 C CNN
 F 3 "~" H 5100 2150 50  0001 C CNN
