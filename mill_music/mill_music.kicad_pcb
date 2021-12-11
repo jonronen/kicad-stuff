@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 5)
+    (drawings 6)
     (tracks 252)
     (zones 0)
     (modules 50)
@@ -2753,6 +2753,9 @@
     )
   )
 
+  (gr_text "https://github.com/jonronen/kicad-stuff/\nMill Music\n(c) 2021" (at 134.112 117.094) (layer B.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+  )
   (gr_circle (center 181.864 114.554) (end 182.118 114.046) (layer F.SilkS) (width 0.12))
   (gr_line (start 114.046 129.286) (end 114.046 77.978) (layer Edge.Cuts) (width 0.05) (tstamp 61B48D03))
   (gr_line (start 196.85 129.286) (end 114.046 129.286) (layer Edge.Cuts) (width 0.05))
