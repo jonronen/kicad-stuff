@@ -4463,7 +4463,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "5dd26594-8791-4052-9d2d-aa99a95e870f")
 		(property "Reference" "Q5"
 			(at 138.43 118.1099 0)
@@ -4474,8 +4473,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "BC109"
-			(at 138.43 120.6499 0)
+		(property "Value" "2N5088"
+			(at 137.16 115.824 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4483,7 +4482,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-18-3"
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
 			(at 138.43 121.285 0)
 			(effects
 				(font
@@ -5224,7 +5223,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "BC109"
+		(property "Value" "2N5088"
 			(at 138.43 59.6899 0)
 			(effects
 				(font
@@ -5233,7 +5232,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-18-3"
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
 			(at 138.43 60.325 0)
 			(effects
 				(font
